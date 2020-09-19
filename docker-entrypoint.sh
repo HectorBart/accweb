@@ -10,7 +10,7 @@ rm -rf config.yml
 envsubst < docker_config.yml > config.yml
 
 # Run winecfg
-winecfg
+# winecfg
 
 # Launch accweb main
 ./main
