@@ -40,7 +40,7 @@ VOLUME /accserver /accweb /sslcerts
 
 WORKDIR /accweb
 
-RUN apt -y update && apt -y install gettext-base wine64-development wine-development libwine-development libwine-development-dev
+RUN apt -y update && apt -y install gettext-base wine64-development wine-development libwine-development libwine-development-dev && dpkg --add-architecture i386 && apt-get update -y && apt-get install wine32-development -y
 
 EXPOSE 8080
 
